@@ -158,7 +158,8 @@ ul {
   margin-right: -5px;
 }
 
-.menu__btn:focus{
+.menu__btn:focus,
+.menu__btn:hover {
   background: url(../img/Burger_hover.svg) no-repeat;
   background-position: center center;
 }
@@ -404,18 +405,25 @@ ul {
 }
 
 .details-btn {
-  background: #FF9900;
+  background: #ff9900;
+  border: 1px solid #ff9900;
   color: #fff;
   font-weight: 700;
-  padding: 14px 38px;
+  padding: 14px 37px;
   margin-right: 30px;
   display: inline-block;
+  transition: all .3s ease-in-out;
+}
+
+.details-btn:hover {
+  background: #fff;
+  color: #ff9900;
+  border: 1px solid #ff9900;
 }
 
 .contract-btn {
   border: 1px solid #333333;
   padding: 14px 37px;
-  transition: all .3s ease-in-out;
   display: inline-block;
 }
 
@@ -574,11 +582,19 @@ ul {
 }
 
 .btn-send-form {
-  padding: 20px 51px;
+  padding: 20px 50px;
+  border: 1px solid #ff9900;
   margin-right: 23px;
-  background: #FF9900;
+  background: #ff9900;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.btn-send-form:hover {
+  background: #222222;
+  color: #ff9900;
+  border: 1px solid #ff9900;
 }
 
 .agreement {
@@ -638,7 +654,18 @@ ul {
   font-weight: 700;
   font-size: 18px;
   color: #CACACA;
+  position: relative;
+  transition: all .3s ease-in-out;
 }
+
+.footer-nav__link:hover::after {
+  transform: scale(1);
+}
+
+.footer-nav__link:hover {
+  color: #fff;
+}
+
 
 .footer-logo__tablet {
   display: none;
@@ -1051,6 +1078,11 @@ ul {
     font-size: 12px;
     line-height: 15px;
     color: #ff9900;
+  }
+
+  .about-card__info--link:hover,
+  .about-card__info--link:focus{
+    color: #fff;
   }
 
   .about-card {
