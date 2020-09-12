@@ -1,0 +1,17 @@
+<svg version="1.1" width="1280" height="1024"
+  viewBox="0 0 1280 1024"
+  baseProfile="full"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:ev="http://www.w3.org/2001/xml-events">
+
+  <symbol id="search-icon" viewBox="0 0 26 26">
+    <g>
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)"/>
+        <circle cx="11.5" cy="11.5" r="10.5"/>
+      </svg>
+    </g>
+  </symbol>
+</svg>
+
