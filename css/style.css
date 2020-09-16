@@ -635,11 +635,14 @@ ul {
   border-right: 2px solid #97EE3F;
   transform: rotate(45deg);
   opacity: 0;
-
 }
 
 .agreement input[type="checkbox"]:checked + .agreement-text::after {
   opacity: 1;
+}
+
+.agreement input[type="checkbox"]:focus + .agreement-text::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .footer-navigation {
@@ -697,7 +700,7 @@ ul {
   }
 
   .btn-send-form {
-    margin-right: 15px;
+    margin-right: 5px;
   }
 
   .agreement {
