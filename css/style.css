@@ -635,6 +635,7 @@ ul {
   border-right: 2px solid #97EE3F;
   transform: rotate(45deg);
   opacity: 0;
+
 }
 
 .agreement input[type="checkbox"]:checked + .agreement-text::after {
@@ -817,6 +818,38 @@ ul {
     margin-bottom: 52px;
   }
 
+  .work-title {
+    margin-bottom: 38px;
+  }
+
+  .work-step__list {
+    position: relative;
+    padding-top: 6px;
+  }
+
+  .work-step__list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 51%;
+    height: 3px;
+    background-color: #cacaca;
+  }
+
+  .work-step__link:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: #ff9900;
+  }
+
+
   .work-card__left {
     max-width: 46%;
   }
@@ -878,7 +911,7 @@ ul {
 }
 
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
   .container {
     padding: 0 50px;
   }
@@ -930,6 +963,18 @@ ul {
     margin-top: 15px;
   }
 
+  .work-step__list::before {
+    width: 100%;
+  }
+
+  .work-step__link:hover::before {
+    width: 25%;
+  }
+
+  .work-step__list {
+    justify-content: space-between;
+  }
+
   .footer-form {
     margin-right: 40px;
   }
@@ -969,6 +1014,7 @@ ul {
     padding: 0 15px;
   }
 
+
   .footer-container {
     flex-wrap: wrap;
     justify-content: center;
@@ -996,8 +1042,6 @@ ul {
 }
 
 @media (max-width: 568px) {
-
-
   .promo {
     padding-top: 31px;
     padding-left: 20px;
@@ -1073,6 +1117,7 @@ ul {
   }
 
   .about-card__info--link {
+    border: 2px solid #ff9900;
     padding: 10px 43px;
     margin-bottom: 36px;
     font-size: 12px;
@@ -1127,11 +1172,15 @@ ul {
   }
 
   .work-title {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 
   .work-step__list {
     margin-bottom: 0px;
+  }
+
+  .work-card__img {
+    margin-top: 8px;
   }
 
   .work-card__title {
@@ -1147,18 +1196,18 @@ ul {
   }
 
   .button-group {
-    margin-top: 17px;
+    margin-top: 18px;
   }
 
   .details-btn {
     padding: 12px 44px;
-    margin-right: 5px;
+    margin-right: 3px;
     font-size: 12px;
     line-height: 15px;
   }
 
   .contract-btn {
-    padding: 14px 31px;
+    padding: 13px 31px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -1170,7 +1219,7 @@ ul {
   }
 
   .questions-title {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 
   .questions-item {
@@ -1199,7 +1248,7 @@ ul {
   }
 
   .btn-send-form {
-    padding: 12px 28px;
+    padding: 12px 27px;
     margin-right: 0;
     margin-bottom: 11px;
     font-size: 12px;
@@ -1214,13 +1263,16 @@ ul {
     font-size: 16px;
   }
 
+  .form-input {
+    font-size: 14px;
+}
+
   .footer-logo__tablet {
     width: 131px;
     height: 42px;
   }
 
   .social-link {
-
     display: block;
     width: 34.4px;
     height: 34.4px;
@@ -1237,6 +1289,9 @@ ul {
     height: 34px;
   }
 
+  .footer-navigation {
+    margin-left: 27px;
+  }
 }
 
 
