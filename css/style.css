@@ -165,17 +165,38 @@ ul {
 }
 
 .promo {
-  background-image: url(../img/main_slider_1.jpg);
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.promo-content {
+  position: absolute;
+  top: 103px;
+  left: 79px;
+  z-index: 99;
+  max-width: 60%;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background:#fff;
+}
+
+.swiper-slide {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 103px;
-  padding-left: 79px;
-  padding-bottom: 91px;
-  margin-bottom: 100px;
+  width: 100%;
+  height: 620px;
 }
 
 .promo-title {
-  max-width: 60%;
   font-weight: 800;
   font-size: 70px;
   line-height: 86px;
@@ -444,9 +465,7 @@ ul {
 }
 
 .questions-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   border-top: 1px solid #cacaca;
   padding: 30px 0 33px 5px;
 }
@@ -456,6 +475,8 @@ ul {
 }
 
 .questions-subtitle {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 24px;
   position: relative;
@@ -468,6 +489,7 @@ ul {
 }
 
 .questions-btn {
+  margin-left: auto;
   border: none;
   border-radius: 50%;
   background: #dfdfdf;
@@ -491,10 +513,19 @@ ul {
   width: 31px;
   height: 1px;
   background-color: #666666;
+  transition: transform .3s ease-in-out;
 }
 
 .questions-btn::before {
   transform: rotate(-90deg);
+}
+
+.questions-btn.accordion-btn__active::after {
+  transform: rotate(180deg);
+}
+
+.questions-btn.accordion-btn__active::before {
+  display: none;
 }
 
 /* footer */
@@ -642,7 +673,7 @@ ul {
 }
 
 .agreement input[type="checkbox"]:focus + .agreement-text::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 
 .footer-navigation {
@@ -919,8 +950,22 @@ ul {
     padding: 0 50px;
   }
 
-  .navigation {
+  /* .navigation {
     display: none;
+  } */
+
+  .nav {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-101%);
+  }
+
+  .menu-active {
+    transform: none;
   }
 
   .promo {
