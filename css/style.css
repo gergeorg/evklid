@@ -1328,10 +1328,6 @@ ul {
     margin-bottom: 15px;
   }
 
-  /* .questions-item {
-    padding: 20px 0 23px 0px;
-  } */
-
   .questions-btn {
     width: 30px;
     height: 30px;
@@ -1341,6 +1337,7 @@ ul {
   .questions-btn::before {
     left: 8px;
     width: 15px;
+    top: 15px;
   }
 
   .form-title {
